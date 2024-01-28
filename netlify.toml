@@ -7,11 +7,3 @@
   for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
-
-[[redirects]]
-  from = "/trips"
-  to = "/.netlify/functions/trips"
-
-[[redirects]]
-  from = "/trip-details"
-  to = "/.netlify/functions/trip-details"  
