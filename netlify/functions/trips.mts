@@ -30,5 +30,7 @@ export default async (req: Request, context: Context) => {
   const paginatedTripsInfo = tripInfos.slice(startIndex, endIndex);
   const totalPages = Math.ceil(tripInfos.length / pageSizeInt);
 
-  return context.json({ trips: paginatedTripsInfo, totalPages });
+  const response = Response.json({ trips: paginatedTripsInfo, totalPages });
+
+  return response;
 };
